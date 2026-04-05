@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     if (req.method === 'GET') {
         try {
             const total = await kv.get('vault_total') || 0.045;
-            const leader = await kv.get('vault_leader') || "@tops87...";
+            const leader = await kv.get('vault_leader') || "Personne pour l'instant";
             return res.status(200).json({ total, leader });
         } catch (error) {
             return res.status(500).json({ error: "Erreur KV" });
