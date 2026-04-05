@@ -35,9 +35,12 @@
         }
 
         img#vault-img {
-            width: 280px;
-            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5));
-            animation: float 4s ease-in-out infinite;
+    width: 200px; /* On réduit pour que le bouton remonte */
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5));
+    animation: float 4s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
         }
 
         @keyframes float {
